@@ -16,22 +16,27 @@ class TestSimonSays < MiniTest::Test
   end
 
   def test_shout_multiple_words
+
     assert_equal "HELLO WORLD", shout("hello world")
   end
 
   def test_repeat
+
     assert_equal "hello hello hello", repeat("hello", 3)
   end
 
   def test_start_of_word_returns_first_letter
+
     assert_equal "h", start_of_word("hello", 1)
   end
 
   def test_start_of_word_returns_first_two_letters
+
     assert_equal "Bo", start_of_word("Bob", 2)
   end
-  
+
   def test_first_word
+
     assert_equal "Hello", first_word("Hello World")
   end
 
